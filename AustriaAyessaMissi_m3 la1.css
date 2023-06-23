@@ -1,0 +1,29 @@
+h2 {
+text-align:center;
+padding : 5px 5px;
+font-family: courier new;
+font-size:60px;
+font-style:normal;
+background-color:lightviolet;
+}
+p {
+text-align:center;
+padding : 1px 1px;
+font-family: courier new;
+font-size:20px;
+font-style:normal;
+text-indent: 100px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+table {
+text-align:center;
+font-family: courier new;
+font-size:20px;
+font-style:normal;
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+}

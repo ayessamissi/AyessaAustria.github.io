@@ -1,0 +1,27 @@
+h1 {
+text-align:center;
+font-weight: bold;
+color: green;
+padding : 5px 5px;
+font-family: times new roman;
+font-size:60px;
+font-style:normal;
+}
+
+table {
+text-align:center;
+font-family: times new roman;
+font-size:20px;
+font-style:normal;
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+}
+
+th {
+color: blue;
+}
+
+td {
+color: red;
+}
