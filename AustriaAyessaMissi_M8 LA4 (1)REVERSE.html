@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<body>
+
+  <h1>Enter any integer:</h1> 
+  <input type="text" id="num">
+  <input type="submit" onclick="reverseInt()" value="submit">
+  <p id="result"></p>
+  <script type="text/javascript">
+  
+  function reverseInt()
+  {
+  	var user=document.getElementById("num").value;
+    var prev=document.getElementById("result");
+    var i,rev=0;
+    while(user !=0){
+    	rev=(rev*10)+(user%10);
+      user=parseInt(user/10);
+    
+    }
+    prev.innerHTML="<h1>The reversed integer is </h1>" +rev;
+    return false;
+    
+   
+	}
+ 
+  </script>
+ <br><a href="AyessaAustria.github.io.html" style="active"><b>Back to Main Page</b></a>	
+  
+</body>
+</head>
+</html>

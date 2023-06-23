@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<body>
+  <h1>Enter any string: </h1>
+  <input type="text" id="lakers">
+  <input type="submit" onclick="palindrome()" value="submit">
+  <script type="text/javascript">
+  
+  function palindrome()
+  {
+  	var yam=document.getElementById("lakers").value;
+    var len="";
+    for(i=yam.length-1; i>=0; i--){
+    len+=yam[i];
+    }
+    if(yam==len){
+    alert("Enterred string is a Palindrome.");
+    	console.log("Enterred string is a Palindrome.");
+    }
+    else{
+    alert("Enterred string is not a Palindrome.");
+    console.log("Enterred string is not a Palindrome.");
+    }
+  }
+  </script>
+  <br><a href="AyessaAustria.github.io.html" style="active"><b>Back to Main Page</b></a>
+  
+</body>
+</head>
+</html>

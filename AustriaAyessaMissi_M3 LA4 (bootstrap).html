@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>MODULE 3: ACTIVITY 4 (Planets on Solar System)</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+	<style>
+	html {
+	font-family: serif;
+	}
+	body {
+  	background-color: lightyellow;
+	}
+	h1 {
+	padding-top: 100px;
+        padding-bottom: 50px;
+	}
+	p {
+	font-size: 0.9rem;
+	padding-left: 75px;
+	padding-right: 75px;
+	}
+	table { border-collapse: collapse; border: 2px solid rgb(200,200,200); margin-right: auto; margin-left: auto; letter-spacing: 0.5px; font-size: 0.8rem;
+	}
+	th{ background-color:#00FFFF;
+	}
+
+	td, th 
+	{
+	border: 1px solid rgb(190,190,190);
+	padding: 10px 20px;
+	text-align: center;
+	}
+	caption {
+	padding: 10px;
+	}
+	a{
+	color:blue;
+	}
+	a:hover{
+	color:yellow;
+	}
+	a:active{
+	color:black;
+	}
+	</style>
+   </head>
+   <body>
+	<div class="container-fluid">
+	<div class="jumbotron bg-info">
+	<h1 align="center" style="color: white;">Planets' Data.</h1> 
+	<p align="center">Data about the planets of our solar system (Planetary facts taken from <i class="fa-solid fa-arrow-up-right-from-square"></i><a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet-Metric</a>).</p>
+	<table class="table hover">
+	<thead>
+	<colgroup>
+	      <col style="width: 40px">
+	      <col style="width: 40px">
+	      <col style="border: 2px solid black">
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+	      <col>
+		<tr style="height: 78px">	
+			<td colspan="2"style="background-color:#EEE;"></td>
+			<th>Name</th>
+			<th id="mass">
+				Mass <br>(10<sup>24</sup>kg)					
+			</th>
+			<th id="diameter">					
+				Diameter <br>(km)
+			</th>
+			<th id="density">
+				Density <br>(kg/m<sup>3</sup>)					
+			</th>
+			<th id="gravity">					
+				Gravity <br>(m/s<sup>2</sup>)
+			</th>
+			<th id="length-of-day">					
+				Length of <br>day <br>(hours)
+			</th>
+			<th id="distance-from-sun" style="width:10%">
+				Distance <br>from Sun <br>(10<sup>6</sup>km)					
+			</th>
+			<th id="mean-temp">
+				Mean <br>temperature <br>(°C)					
+			</th>
+			<th id="no-of-moons">
+				Number <br>of <br>moons
+			</th>
+			<th id="notes">
+				Notes							
+			</th>
+		</tr>
+		<tr>
+			<th rowspan="4" colspan="2" scope="rowgroup">
+				Terrestial planets
+			</th>
+			<th headers="planet-name-mercury">
+				Mercury
+			</th>
+			<td style="background-color:#EEE;">0.330</td>
+			<td style="background-color:#EEE;">4,879</td>
+			<td style="background-color:#EEE;">5427</td>
+			<td style="background-color:#EEE;">3.7</td>
+			<td style="background-color:#EEE;">4222.6</td>
+			<td style="background-color:#EEE;">57.9</td>
+			<td style="background-color:#EEE;">167</td>
+			<td style="background-color:#EEE;">0</td>
+			<td style="background-color:#EEE;">Closest to the Sun</td>
+		</tr>
+		<tr style="height">
+			<th headers="planet-name-venus">
+				Venus
+			</th>
+			<td style="background-color: ghostwhite;">4.87</td>
+			<td style="background-color: ghostwhite;">12,104</td>
+			<td style="background-color: ghostwhite;">5243</td>
+			<td style="background-color: ghostwhite;">8.9</td>
+			<td style="background-color: ghostwhite;">2802.0</td>
+			<td style="background-color: ghostwhite;">108.2</td>
+			<td style="background-color: ghostwhite;">464</td>
+			<td style="background-color: ghostwhite;">0</td>
+			<td style="background-color: ghostwhite;"></td>
+		</tr>
+		<tr>
+			<th headers="planet-name-earth">
+				Earth
+			</th>
+			<td style="background-color:#EEE;">5.97</td>
+			<td style="background-color:#EEE;">12,756</td>
+			<td style="background-color:#EEE;">5514</td>
+			<td style="background-color:#EEE;">9.8</td>
+			<td style="background-color:#EEE;">24.0</td>
+			<td style="background-color:#EEE;">149.6</td>
+			<td style="background-color:#EEE;">15</td>
+			<td style="background-color:#EEE;">1</td>
+			<td style="background-color:#EEE;">Our world</td>
+		</tr>
+		<tr>
+			<th headers="planet-name-mars">
+				Mars
+			</th>
+			<td style="background-color: ghostwhite;">0.642</td>
+			<td style="background-color: ghostwhite;">6,792</td>
+			<td style="background-color: ghostwhite;">3933</td>
+			<td style="background-color: ghostwhite;">3.7</td>
+			<td style="background-color: ghostwhite;">24.7</td>
+			<td style="background-color: ghostwhite;">227.9</td>
+			<td style="background-color: ghostwhite;">-65</td>
+			<td style="background-color: ghostwhite;">2</td>
+			<td style="background-color: ghostwhite;">The red planet</td>
+		</tr>
+		<tr>
+			<th rowspan="4" scope="rowgroup">
+				Jovian planets
+			</th>
+			<th rowspan="2" scope="row">
+				Gas giants
+			</th>
+			<th headers="planet-name-jupiter">
+				Jupiter
+			</th>
+			<td style="background-color:#EEE;">1898</td>
+			<td style="background-color:#EEE;">142,984</td>
+			<td style="background-color:#EEE;">1326</td>
+			<td style="background-color:#EEE;">23.1</td>
+			<td style="background-color:#EEE;">9.9</td>
+			<td style="background-color:#EEE;">778.6</td>
+			<td style="background-color:#EEE;">-110</td>
+			<td style="background-color:#EEE;">67</td>
+			<td style="background-color:#EEE;">The largest planet</td>
+		</tr>
+		<tr>
+			<th headers="planet-name-saturn">
+				Saturn
+			</th>
+			<td style="background-color: ghostwhite;">568</td>
+			<td style="background-color: ghostwhite;">120,536</td>
+			<td style="background-color: ghostwhite;">687</td>
+			<td style="background-color: ghostwhite;">9.0</td>
+			<td style="background-color: ghostwhite;">10.7</td>
+			<td style="background-color: ghostwhite;">1433.5</td>
+			<td style="background-color: ghostwhite;">-140</td>
+			<td style="background-color: ghostwhite;">62</td>
+			<td style="background-color: ghostwhite;"></td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">
+				Ice giants
+			</th>
+			<th headers="planet-name-uranus">
+				Uranus
+			</th>
+			<td style="background-color:#EEE;">86.8</td>
+			<td style="background-color:#EEE;">51,118</td>
+			<td style="background-color:#EEE;">1271</td>
+			<td style="background-color:#EEE;">8.7</td>
+			<td style="background-color:#EEE;">17.2</td>
+			<td style="background-color:#EEE;">2872.5</td>
+			<td style="background-color:#EEE;">-195</td>
+			<td style="background-color:#EEE;">27</td>
+			<td style="background-color:#EEE;"></td>
+		</tr>
+		<tr>
+			<th headers="planet-name-neptune">
+				Neptune
+			</th>
+			<td style="background-color: ghostwhite;">102</td>
+			<td style="background-color: ghostwhite;">49,528</td>
+			<td style="background-color: ghostwhite;">1638</td>
+			<td style="background-color: ghostwhite;">11.0</td>
+			<td style="background-color: ghostwhite;">16.1</td>
+			<td style="background-color: ghostwhite;">4495.1</td>
+			<td style="background-color: ghostwhite;">-200</td>
+			<td style="background-color: ghostwhite;">14</td>
+			<td style="background-color: ghostwhite;"></td>
+		</tr>
+
+		<tr>
+			<th colspan="2" scope="rowgroup">
+				Dwarf planets
+			</th>
+			<th headers="planet-name-pluto">
+				Pluto
+			</th>
+			<td style="background-color:#EEE;">0.0146</td>
+			<td style="background-color:#EEE;">2,370</td>
+			<td style="background-color:#EEE;">2095</td>
+			<td style="background-color:#EEE;">0.7</td>
+			<td style="background-color:#EEE;">153.3</td>
+			<td style="background-color:#EEE;">5906.4</td>
+			<td style="background-color:#EEE;">-225</td>
+			<td style="background-color:#EEE;">5</td>
+			<td style="background-color:#EEE;">Declassified as a planet in 2006,<br>but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+		</tr>
+		</thead>
+	</table>    
+   </div><br>     
+   <a href="AyessaAustria.github.io.html">Back to Main Page</a>
+   </body>
+</html>

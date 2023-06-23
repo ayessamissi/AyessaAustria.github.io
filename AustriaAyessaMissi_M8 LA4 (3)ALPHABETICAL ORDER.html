@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<body>
+  <h1>Enter any word:</h1> 
+  <input type="text" id="l">
+  <input type="submit" onclick="alph_order()" value="submit">
+<p id="res"></p>
+  <script type="text/javascript">
+  
+  function alph_order()
+  {
+  	var string=document.getElementById("l").value;
+var preb=document.getElementById("res");
+    var stringArray = string.split('').sort().join('');
+       
+    console.log(string);
+		console.log(stringArray);
+preb.innerHTML="<h1>Alphabetical order of the letters of the enterred word: </h1>"+ stringArray;
+return false;
+	}
+  </script>
+  <br><a href="AyessaAustria.github.io.html" style="active"><b>Back to Main Page</b></a>
+  
+</body>
+</head>
+</html>

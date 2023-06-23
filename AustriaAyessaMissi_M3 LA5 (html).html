@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Activity 5 in Module 3: HTML Form</title>
+ <link href="minimal-table.css" rel="stylesheet" type="text/css">
+	<style>
+ html {
+	font-family: sans-serif;
+	th {
+	border: 1px solid black;
+	background-color:#D0D3D4;
+	}
+	fieldset{
+  	border: 1px solid rgb(255,232,57);
+  	width: 250px;
+	text-align: center;
+	}
+	tr, td, th, table{
+	border:1px solid black;
+	}
+	label{
+	display: inline-block; 
+	width: 90%; 
+	text-align: right;
+	}
+	textarea {
+	overflow-y: scroll;
+	overflow: auto;
+    	padding-bottom: 200px;
+	}
+	</style>
+ </head>
+ <body>
+ <h2 align="center">Module 3: LEARNING ACTIVITY 5.</h2>
+ <form action="/action_page.php">
+<center> 
+<fieldset class="field" style="width: 570px">
+<div align="left">
+   <table>
+   <tr>
+   <td align="right">
+   <label align="right" for="fname">Name:</label></td>
+   <td>
+   <input type="text" id="full name" name="full name" placeholder="Walaa Brody" size="35"></td>
+   </tr>
+   <tr>
+   <td align="right">
+   <label for="email">Email:</label></td>
+   <td>
+   <input type="text" id="email" name="email" placeholder="w.brody@widget-sales.com" size="35"></td>
+   </tr>
+   <tr>
+   <td align="right">
+   <label for="address">Address:</label>
+   </td>
+   <td>
+   <textarea name="address" cols="35" rows="5" style="overflow-y: scroll;" placeholder="162 Main Road                               Rondebosch                              Cape Town"></textarea></td>
+   </tr>
+   <tr>
+   <td align="right">
+   <label for="postcode">Postcode:</label></td>
+   <td>
+   <input type="text" id="postcode" name="postcode" placeholder="7700"></td>
+   </tr>
+   </table>
+   <br>
+   <br>
+   <br>
+   <table border="1">
+	<tr> <th id="product" align="left">Product</th> <th id="product">Part Number</th> <th id="product" align="left">Quantity</th> <th id="price">Unit Price</th> <th id="subtotal" align="left">Subtotal</th> </tr>
+	<tr> <td>Econo Box</td> <td>LB100</td> <td><input type="text" maxlength="5" size="5" placeholder="3"></td> <td>R5</td> <td><input type="text" maxlength="13" size="13" placeholder="R15"></td> </tr>
+	<tr> <td>Standard Box</td> <td>LB200</td> <td><input type="text" maxlength="5" size="5" placeholder="4"></td> <td>R10</td> <td><input type="text" maxlength="13" size="13" placeholder="R40"></td> </tr>
+	<tr> <td>Premium Box/TD></td> <td>LB300</td> <td><input type="text" maxlength="5" size="5" placeholder="1"></td> <td>R15</td> <td><input type="text" maxlength="13" size="13" placeholder="R15"></td> </tr>
+	<tr> <td>Deluxe Box/TD></td> <td>LB400</td> <td><input type="text" maxlength="5" size="5" placeholder="0"></td> <td>R20</td> <td><input type="text" maxlength="13" size="13"></td> </tr>
+	<tr> <td>Super Deluxe Box/TD></td> <td>LB500</td> <td><input type="text" maxlength="5" size="5" placeholder="1"></td> <td>R30</td> <td><input type="text" maxlength="13" size="13" placeholder="R30"></td> </tr>
+	<tr> <td colspan="4" rowspan="1" align="right">Total:</td> <td><input type="text" maxlength="13" size="13" placeholder="R100"></td> </tr>
+   </table>
+   <br>
+   <br>
+   <br>
+   <br>
+   <table>
+	<tr> <th align="left">Credit Card Details</th> <td></td> <td></td></tr>
+	<tr> <td aligh="left">&nbsp;Card Type:</td> <td></td> <td></td>
+	</tr>
+	<tr> <td>&nbsp;<input type="radio" id="mastercard" name="card type" value="mastercard" checked>
+         <label for="mastercard">Mastercard</label></td> 
+	 <td><label for="card number">Card Number:</label></td> <td><input type="text" maxlength="15" size="15" placeholder="45645"></td> 
+	</tr>
+	<tr> <td>&nbsp;<input type="radio" id="visa" name="card type" value="visa">
+         <label for="visa">Visa</label></td> 
+	 <td><label for="expiry date">Expiry date:</label></td> <td><input type="text" maxlength="5" size="5" placeholder="03/99"></td> 
+	</tr>
+	<tr> <td>&nbsp;<input type="radio" id="american express" name="card type" value="american express">
+         <label for="american express">American Express</label></td> 
+	 <td></td> <td></td>
+	</tr>
+	<tr> <td>&nbsp;<input type="radio" id="diners club" name="card type" value="diners club">
+         <label for="diners club">Diners Club</label></td> 
+	 <td></td> <td></td>
+	</tr>
+   </table>
+    <br>
+    <br>
+    <br>
+    <table>
+	<tr> <th>Delivery Address:</th><td><textarea name="delivery address" cols="27" rows="5" style="overflow-y: scroll;" placeholder="162 Main Road                               Rondebosch                         Cape Town"></textarea></td>
+	</tr>
+    </table>
+    <br>
+    <br>
+    <input type="submit" value="Send Order" style="height:25px; width:100px">&nbsp;
+    <input type="reset" value="Clear Form" style="height:25px; width:100px">
+   </fieldset>
+</center>
+ </form>
+ <a href="AyessaAustria.github.io.html">Back to Main Page</a>
+ </body>
+</html>
